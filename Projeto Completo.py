@@ -1,7 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials, db, firestore
 
-cred = firebase_admin.credentials.Certificate("chave_firebase.json")#
+cred = firebase_admin.credentials.Certificate("chave_firebase.json")
 firebase_admin.initialize_app(cred,{
              'databaseURL': "https://mensagem-encryptografada-default-rtdb.firebaseio.com/"
 })
